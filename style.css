@@ -1,9 +1,9 @@
     @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');   
 
 :root{
-    --cor-de-fundo:#c7b5ca;
-    --cor-primaria:#7c4cca;
-    --cor-secundaria:#5A639C;
+    --cor-de-fundo:#921A40;
+    --cor-primaria:#e4b5c2;
+    --cor-secundaria:#D9ABAB;
     --fonte:"Rubik", sans-serif;
 }
 *{
@@ -14,4 +14,34 @@ body{
     background-color: var(--cor-de-fundo);
     color: var(--cor-primaria);
     font-family: var(--fonte);
+    height: 100vh; /*Altura da página*/
+    margin:  0;
+}
+header{
+    background-color: var(--cor-primaria);
+    text-align: center;
+}
+
+h1{ 
+    font-size: 2rem;
+    color: var(--cor-de-fundo);
+    font-weight: 700;/*Peso da fonte*/
+
+}
+
+nav{
+    display: flex; /* ORGANIZA AS TAGS 'FILHAS' EM UM FLEX-BOX */
+    justify-content: center;
+    font-weight: 400;
+}
+nav a {
+    text-decoration: none;
+    color: var(--cor-de-fundo);
+    margin: 0 2rem 1rem 0;
+    font-size: 1.2rem;
+}
+nav a:hover{
+    text-decoration: underline;
+    transform: scale(1.0); /* muda a escala */
+    transition: transform 1s;
 }
