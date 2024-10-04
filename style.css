@@ -2,8 +2,8 @@
 
 :root{
     --cor-de-fundo: #433878;
-    --cor-primaria: #7E60BF;
-    --cor-secundaria:#FCF8F3;
+    --cor-primaria: #8e63f1;
+    --cor-secundaria:#ebe1e1;
     --fonte: "Poppins", sans-serif;
 }
 *{
@@ -44,6 +44,24 @@ nav a{
 
 nav a:hover {
     text-decoration: underline;
-    transform: scale(1.4);
-    transition: transform 0.3s;
+    transform: scale(1.5);
+    transition: transform 2s;
+}
+span{
+    color: var(--cor-secundaria);
+    font-weight: bold;
+}
+ footer{
+    text-align: center;
+    background-color: var(--cor-primaria);
+    color: var(--cor-de-fundo);
+ }
+.graficos-texto{
+    margin: 5rem;
+}
+
+.graficos-texto{
+    font-size: 1.3rem;
+    border: var(--cor-secundaria) solid 2px;
+    padding: 2rem;
 }
