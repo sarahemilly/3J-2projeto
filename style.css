@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap');
 
 :root{
-    --cor-de-fundo:#8ABFA3;
-    --cor-primaria: #FEECB3;
-    --cor-secundaria: #ED3EF7;
+    --cor-de-fundo:#FFB0B0;
+    --cor-primaria: #FFD09B;
+    --cor-secundaria: #FFECC8;
     --fonte: "Sofadi One", sans-serif;
 }
 *{
