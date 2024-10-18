@@ -1,28 +1,25 @@
-import { getCSS } from "../comum.js";
+import { getCSS } from "./comum.js";
 
 async function quantidadeDeUsuarios(){
 const url = 'https://raw.githubusercontent.com/guilhermeonrails/api/main/numero-usuarios.json'
-const resultado = await fetch (url);
+const resultado = await fetch(url);
 const dados = await resultado.json();
-const nomeDaasRedes  =Object.keys(dados);
+const nomeDasRedes = Object.keys(dados);
 const quantidadeDeUsuarios = Object.values(dados);
 
-const  infos = [
+const infos = [
     {
-        x: nomeDaasRedes,
+        x: nomeDasRedes,
         y: quantidadeDeUsuarios,
         type: 'bar',
         marker: {
-            color: getCSS(--cor-primaria)
+            color: getCSS('--cor-primaria')
         }
     }
 ]
 const grafico = document.createElement('div');
-grafico.className =  'grafico'
+grafico.className = 'grafico';
 document.getElementById('graficos-container').appendChild(grafico);
 Plotly.newPlot(grafico,infos)
-
-
 }
-
 quantidadeDeUsuarios()

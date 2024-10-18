@@ -1,3 +1,7 @@
-const getCSS = (variavel)=> {
-  return getComputedstyle(document.body).getPropertyValue(variavel)
+const getCSS = (variavel) => {
+    return getComputedStyle(document.body).getPropertyValue(variavel)
+}
+
+export{
+    getCSS
 }
